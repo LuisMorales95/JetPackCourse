@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_ch_graph"
+    app:startDestination="@id/homeChFragment">
+
+    <fragment
+        android:id="@+id/homeChFragment"
+        android:name="com.luiz.jetpackcourse.navigationComponentChallenge.HomeChFragment"
+        android:label="fragment_home_ch"
+        tools:layout="@layout/fragment_home_ch" >
+        <action
+            android:id="@+id/action_homeChFragment_to_nameFragment"
+            app:destination="@id/nameFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeChFragment_to_termsChFragment"
+            app:destination="@id/termsChFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/nameFragment"
+        android:name="com.luiz.jetpackcourse.navigationComponentChallenge.NameChFragment"
+        android:label="fragment_name"
+        tools:layout="@layout/fragment_name_ch" >
+        <action
+            android:id="@+id/action_nameFragment_to_emailFragment"
+            app:destination="@id/emailFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.luiz.jetpackcourse.navigationComponentChallenge.EmailChFragment"
+        android:label="fragment_email"
+        tools:layout="@layout/fragment_email_ch" >
+        <action
+            android:id="@+id/action_emailFragment_to_welcomeChFragment"
+            app:destination="@id/welcomeChFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeChFragment"
+        android:name="com.luiz.jetpackcourse.navigationComponentChallenge.WelcomeChFragment"
+        android:label="fragment_welcome_ch"
+        tools:layout="@layout/fragment_welcome_ch" >
+        <action
+            android:id="@+id/action_welcomeChFragment_to_termsChFragment"
+            app:destination="@id/termsChFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/termsChFragment"
+        android:name="com.luiz.jetpackcourse.navigationComponentChallenge.TermsChFragment"
+        android:label="fragment_terms_ch"
+        tools:layout="@layout/fragment_terms_ch" />
+</navigation>

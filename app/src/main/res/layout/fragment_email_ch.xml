@@ -4,34 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".navigationComponent.HomeFragment">
+        tools:context=".navigationComponentChallenge.EmailChFragment">
 
-        <EditText
-            android:id="@+id/editText2"
+        <TextView
+            android:id="@+id/email_ch_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="235dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text=""
+            android:layout_marginTop="60dp"
             android:textSize="30sp"
+            android:text="Enter your email"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/button2"
+        <EditText
+            android:id="@+id/email_ch_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Submit"
+            android:layout_marginTop="69dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="30sp"
+            android:hint="example@example.com"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_ch_title" />
+
+        <Button
+            android:id="@+id/email_ch_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:text="Next >"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+            app:layout_constraintTop_toBottomOf="@+id/email_ch_email" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </layout>

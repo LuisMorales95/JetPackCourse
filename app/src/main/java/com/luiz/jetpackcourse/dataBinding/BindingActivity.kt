@@ -15,9 +15,7 @@ class BindingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        bindingViewModelProvider =
-            BindingViewModelProvider(200)
-        viewModel = ViewModelProvider(this).get(BindingViewModel::class.java)
+        bindingViewModelProvider = BindingViewModelProvider(200)
         viewModel = ViewModelProvider(this, bindingViewModelProvider)[BindingViewModel::class.java]
         binding = DataBindingUtil.setContentView(this,
             R.layout.activity_binding
